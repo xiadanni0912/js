@@ -7,19 +7,31 @@
   <title>Document</title>
 </head>
 <body>
+  <p id ='amao'>我是一段文字</p>
   <script>
+    console.log('hello world')
   document.wtite=("<h1>hello world!</h1>")
 
-  var a = 10
-  var b = 20
-  document.write( a + b)
-  document.write('<br>')
+  var a = 1
+  var b = 2
+  document.write( a + b + '<br>' )
 
   var i = 0
-  while ( i <= 100000 ) {
+  while ( i < 3 ) {
     document.write( i + '<br>')
     i++
   }
+
+  document.write('<br>')
+
+  var x = 20;
+  if ( x > 20 ) {     // if  x>20  then
+    document.wirte('x是一个大于20的数')
+  } else {            // else
+    document.write('x是一个小于等于20的数')
+  }
+  document.getElementById('amao').innerHTML = '我才是被显示的文字'
+
   </script>
 </body>
 </html>
