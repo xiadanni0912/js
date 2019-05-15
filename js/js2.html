@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+        <h1 id = 'headText'>bbbbbbbbbbbbb</h1>
+    var person = ['小崎','小夏','阿妮']
+      var didian = ['宿舍','校门','教务处']
+      var shijian = ['看门','睡觉','批试卷']
+      var times = ['上午','中午','下午']
+
+      var p,d,s,t
+      p=Math.floor(Math.random()*person.length)
+      d=Math.floor(Math.random()*didian.length)
+      s=Math.floor(Math.random()*shijian.length)
+      t=Math.floor(Math.random()*times.length)
+      document.write(person[p]+times[t]+'在'+didian[d]+shijian[s] )
+
+      document.write('<br>')
+      document.write('<br>')
+      var car = {
+        color:'black',
+        energy:60,
+        speed:886,
+      }
+       function stop() {
+         this.speed=0
+       }
+
+       document.write(car.speed)
+
+       theElement = document.getElementById('headText')
+       theElement.innerHTML = '猜猜我隔哪呢'
+
+  </script>
+</body>
+</html>
